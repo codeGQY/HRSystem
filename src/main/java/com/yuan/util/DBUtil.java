@@ -15,7 +15,7 @@ public class DBUtil {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String url="jdbc:mysql://localhost:3306/hrSystem";
+        String url="jdbc:mysql://localhost:3306/hrsystem?useUnicode=true&characterEncoding=utf8";
         try {
             connection= DriverManager.getConnection(url,"root","123456");
         } catch (SQLException e) {

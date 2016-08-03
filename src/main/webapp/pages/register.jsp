@@ -11,7 +11,7 @@
     <title>用户注册</title>
 </head>
 <body>
-    <form action="/RegServlet" method="post">
+    <form action="<%=request.getContextPath()%>/RegServlet" method="post" accept-charset="utf-8">
         用户名：<input type="text" name="userName"><br>
         密码：<input type="password" name="password"><br>
         姓名：<input type="text" name="name"><br>
@@ -20,7 +20,7 @@
         电子邮箱：<input type="text" name="email"><br>
         毕业学校：<input type="text" name="school"><br>
         所学专业：<input type="text" name="major"><br>
-        出生日期：<input type="date" name="birthday"><br>
+        出生日期：<input type="text" name="birthday"><br>
         地址：<input type="text" name="address"><br>
         用户类型：<input type="text" name="type"><br>
         所在公司：<input type="text" name="company"><br>

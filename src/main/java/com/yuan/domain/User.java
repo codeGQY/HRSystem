@@ -15,7 +15,7 @@ public class User {
     private String email;
     private String school;
     private String major;
-    private Date birthday;
+    private String birthday;
     private String address;
     private String company;
     private int type;
@@ -41,7 +41,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        password = password;
+        this.password = password;
     }
 
     public String getName() {
@@ -92,11 +92,11 @@ public class User {
         this.major = major;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
